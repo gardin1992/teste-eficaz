@@ -210,6 +210,59 @@ header {
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
 
+        .main_menu {
+            cursor: pointer;
+        }
+
+        #menu-content {
+            z-index: 999;
+            display: block;
+            height: 350px;
+            background: #fff;
+            font-size: 12px;
+            display: none;
+            .menu-category {
+                color: #111;
+                padding-top: 40px;
+            }
+            .menu-container {
+                width: $s_width;
+                margin: 0 auto;
+            }
+            .menu-item-container {
+                width: 140px;
+                float: left;
+            }
+
+            .menu-destaque {
+                width: 540px;
+                float: left;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .menu-category {
+                color: $c_black_1;
+                padding-top: 40px;
+                text-transform: uppercase;
+            }
+            .menu-category-item {
+                margin-top: 10px;
+                a { 
+                    color: $c_gray;
+                }
+            }
+
+            .menu-category-item-mais {
+                margin-top: 15px;
+                a { 
+                    color: $c_black_1;
+                }
+            }
+        }
+
         .menu-container {
             @include container();
             position: relative;
@@ -241,14 +294,6 @@ header {
                 .main_menu_item--text {
                     padding: 0 5px;
                 }
-            }
-
-            .menu-item-container {
-                position: absolute;
-                width: 100%;
-                background: $c_white;
-                top: 50px;
-                display: none;
             }
         }
 
@@ -590,8 +635,6 @@ footer {
             border-color: $c_gray;
         }
 
-        
-
         span.title {
             font-weight: bold;
         }
@@ -645,9 +688,6 @@ footer {
                 object-fit: contain;
             }
         }
-
-        
-        
     }
 
     .footer {
